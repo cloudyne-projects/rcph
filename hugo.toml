@@ -1,4 +1,4 @@
-baseURL = 'http://rcph.uk/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://rcph.uk/'
+languageCode = 'en-gb'
+title = 'RC Plumbing & Heating'
 theme = 'rcph'
