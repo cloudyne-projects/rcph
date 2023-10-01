@@ -1267,6 +1267,10 @@ video {
   margin-top: -2px;
 }
 
+.mt-\[-1px\] {
+  margin-top: -1px;
+}
+
 .block {
   display: block;
 }
@@ -1349,6 +1353,14 @@ video {
 
 .h-0\.5 {
   height: 0.125rem;
+}
+
+.h-\[1px\] {
+  height: 1px;
+}
+
+.h-\[1\.5px\] {
+  height: 1.5px;
 }
 
 .w-0 {
