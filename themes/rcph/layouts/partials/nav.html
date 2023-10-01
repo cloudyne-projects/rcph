@@ -112,9 +112,12 @@
                 </div>
             </div>
             {{ else }}
-            <a class="px-4 py-2 mt-2 rounded-lg md:mt-0 md:ml-4 text-base text-white hover:text-white focus:text-white hover:underline underline-offset-5 focus:underline decoration-secondary-700 focus:outline-none focus:shadow-outline"
+            <a class="group px-4 py-2 mt-2 rounded-lg md:mt-0 md:ml-4 text-base text-white focus:outline-none focus:shadow-outline"
                 href="{{ .URL | absLangURL }}" title="{{ .Title | default .Name }}">
                 {{ .Name }}
+                <div class="relative px-4 w-full h-0.5 mt-[-2px]">
+                    <div class="absolute bottom-0 left-0 w-0 h-full bg-secondary-700 transition-all duration-300 group-hover:w-full"></div>
+                </div>
             </a>
             {{ end }}
             {{ end }}
