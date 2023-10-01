@@ -1,5 +1,6 @@
 baseURL: 'https://rcph.uk/'
 title: RC Plumbing & Heating
+theme: 'rcph'
 languageCode: en-gb
 DefaultContentLanguage: en
 enableEmoji: true
@@ -49,9 +50,9 @@ params:
   author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "Super Fast, and Flexible"
-  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
-  disable_theme_toggle: false
+  moto: "Fueling progress & ensuring safety."
+  description: ""
+  disable_theme_toggle: true
   disable_stay_uptodate: false
 
   p1:
@@ -112,27 +113,35 @@ params:
 
 menu:
   main:
-    - identifier: prose
-      name: Prose
-      url: /prose/
+    - identifier: home
+      name: Home
+      url: /
       weight: 10
-    - identifier: about
-      name: About
-      url: /about/
+    - identifier: welcome
+      name: Welcome
+      url: /welcome/
       weight: 20
-    - identifier: categories
-      pre: dropdown
-      name: Categories
+    - identifier: recent
+      name: Recent
+      url: /recent/
       weight: 30
-    - identifier: dropdown
-      pre: complexdropdown
-      name: Dropdown
+    - identifier: projects
+      name: Projects
+      url: /projects/
       weight: 40
-    - identifier: contact
-      name: Contact
-      url: /contact/
+    - identifier: consultation
+      name: Consultation
+      url: /consultation/
       weight: 50
-  categories:
+    # - identifier: recent
+    #   pre: dropdown
+    #   name: Recent
+    #   weight: 30
+    # - identifier: projects
+    #   pre: complexdropdown
+    #   name: Projects
+    #   weight: 40
+  recent:
     - identifier: prose
       name: Prose
       url: /prose/
@@ -141,7 +150,7 @@ menu:
       name: About
       url: /about/
       weight: 20
-  dropdown:
+  projects:
     - identifier: appearance
       pre: stars # can be stars, comments or piechart
       name: Appearance
@@ -217,4 +226,4 @@ privacy:
 module:
   hugoVersion:
     extended: true
-    min: "0.104.0"
+    min: "0.117.0"
