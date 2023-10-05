@@ -5,7 +5,7 @@
 
 @layer components  {
     .icon-container {
-        @apply relative justify-center items-center flex border-solid border-[3px] border-neutral-700 rounded-full bg-neutral-200;
+        @apply relative border-solid border-[3px] border-neutral-700 rounded-full bg-neutral-200 hidden md:flex md:justify-center md:items-center;
     }
 }
 
