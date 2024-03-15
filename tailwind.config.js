@@ -5,6 +5,7 @@ module.exports = {
   content: [
     './layouts/**/*.html',
     './content/**/*.md',
+    './themes/hugo-shortcode-gallery/**/*.html',
     './themes/rcph/layouts/**/*.html',
     './themes/rcph/content/**/*.md'
   ],

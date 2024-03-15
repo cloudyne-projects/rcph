@@ -7,6 +7,9 @@
     .icon-container {
         @apply relative border-solid border-[3px] border-neutral-700 rounded-full bg-neutral-200 hidden md:flex md:justify-center md:items-center;
     }
+    body .justified-gallery-filterbar button {
+        @apply text-neutral-700 border-neutral-700 border-2 mt-8 mb-4;
+    }
 }
 
 @font-face {
@@ -18,6 +21,10 @@
 
 html {
     font-family: "Aldrich-Regular";
+}
+
+.justified-gallery-filterbar button:first-child {
+    display: none;
 }
 
 .prose :where(h1):not(:where([class~="not-prose"] *)) {

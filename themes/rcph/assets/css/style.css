@@ -1090,6 +1090,16 @@ video {
   }
 }
 
+body .justified-gallery-filterbar button {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 30 30 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1100,6 +1110,10 @@ video {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .absolute {
@@ -1203,11 +1217,6 @@ video {
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-}
-
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
 }
 
 .mx-auto {
@@ -1325,16 +1334,20 @@ video {
   height: 1.5rem;
 }
 
-.h-\[150px\] {
-  height: 150px;
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-\[140px\] {
+  height: 140px;
+}
+
+.h-\[190px\] {
+  height: 190px;
 }
 
 .h-\[1px\] {
   height: 1px;
-}
-
-.h-\[200px\] {
-  height: 200px;
 }
 
 .h-\[450px\] {
@@ -1355,14 +1368,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[140px\] {
-  height: 140px;
-}
-
-.h-\[190px\] {
-  height: 190px;
 }
 
 .w-0 {
@@ -1393,16 +1398,8 @@ video {
   width: 1.5rem;
 }
 
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-full {
-  width: 100%;
+.w-9 {
+  width: 2.25rem;
 }
 
 .w-\[140px\] {
@@ -1413,8 +1410,16 @@ video {
   width: 190px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .max-w-4xl {
@@ -1584,6 +1589,10 @@ video {
   border-top-right-radius: 0.5rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-t-2 {
   border-top-width: 2px;
 }
@@ -1644,11 +1653,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/homepage\/rhyscottam\.jpg\'\)\] {
@@ -1740,6 +1744,11 @@ video {
   padding-bottom: 0.125rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1768,10 +1777,6 @@ video {
 .py-96 {
   padding-top: 24rem;
   padding-bottom: 24rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
 }
 
 .pb-2 {
@@ -1993,6 +1998,15 @@ video {
   --tw-ring-color: rgb(212 212 216 / 0.4);
 }
 
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -2061,6 +2075,10 @@ video {
 
 html {
   font-family: "Aldrich-Regular";
+}
+
+.justified-gallery-filterbar button:first-child {
+  display: none;
 }
 
 .prose :where(h1):not(:where([class~="not-prose"] *)) {
@@ -2327,11 +2345,6 @@ html {
     position: sticky;
   }
 
-  .md\:mx-40 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-
   .md\:-mt-1 {
     margin-top: -0.25rem;
   }
@@ -2438,11 +2451,6 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mx-40 {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-  
   .lg\:mb-0 {
     margin-bottom: 0px;
   }

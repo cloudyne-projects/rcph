@@ -1,6 +1,8 @@
 baseURL: 'https://rcph.uk/'
 title: RC Plumbing & Heating
-theme: 'rcph'
+theme:
+  - rcph
+  - hugo-shortcode-gallery
 languageCode: en-gb
 DefaultContentLanguage: en
 enableEmoji: true
@@ -100,14 +102,14 @@ params:
     placeholder: "Enter your email"
     button: "Notify me"
 
-  # social_media:
+  social_media:
   #   github:
   #     enabled: true
   #     url: 'https://github.com/nusserstudios'
-  #   facebook:
-  #     enabled: true
-  #     url: 'https://facebook.com/nusserstudios'
-  #     clean_url: 'facebook.com/nusserstudios'
+    facebook:
+      enabled: true
+      url: 'https://www.facebook.com/people/RC-Plumbing-Heating/100085314463422/'
+      clean_url: 'facebook.com/rcph'
   #   instagram:
   #     enabled: true
   #     url: 'https://instagram.com/nusserstudios'
@@ -127,10 +129,9 @@ menu:
       name: Welcome
       url: '/#welcome'
       weight: 20
-    - identifier: recent
-      pre: elementlink
-      name: Recent
-      url: '/#recent'
+    - identifier: gallery
+      name: Gallery
+      url: '/gallery'
       weight: 30
     # - identifier: projects # needed but comment out now for MVP
     #   name: Projects
