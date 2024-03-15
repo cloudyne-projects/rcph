@@ -235,4 +235,4 @@ privacy:
 module:
   hugoVersion:
     extended: true
-    min: "0.117.0"
+    min: "0.123.8"
