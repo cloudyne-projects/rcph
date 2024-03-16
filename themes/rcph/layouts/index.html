@@ -46,6 +46,9 @@
             <p class="hidden md:block">Age: {{ $diff := now.Sub (time .Site.Params.Dob) }} {{ $years := div (div $diff.Hours 24) 365 }} {{ math.Floor $years }}</p>
             <p>Experience: {{ $diff := now.Sub (time .Site.Params.Experience) }} {{ $years := div (div $diff.Hours 24) 365 }} {{ math.Floor $years }}+ years</p>
         </div>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-x-32 text-base mb-12">
+            <p class="text-lg font-bold">Gas Safe Register: <a class="text-secondary-700" href="https://www.gassaferegister.co.uk/CheckBusiness?bid=XKJAdLFOLSTgh7P7%252fCTmUQ%253d%253d&cp=pEiTTWuC8BLthShFW1YDfoE1FcNJe3dDk6H%252bDKy5Nh4%253d" target="_blank">915188</a></p>
+        </div>
         <p class="text-center xl:mx-40">I'm Rhys, a dedicated and experienced gas engineer and plumber with a passion for creating safe and comfortable living spaces. With years of hands-on expertise, I've honed my skills in gas system installations, heating solutions, and plumbing services. My journey in this field has been defined by a commitment to excellence, ensuring that every project I undertake is executed with precision and adherence to the highest safety standards. I take pride in delivering reliable and efficient solutions for all your gas engineering and plumbing needs. Your satisfaction and the well-being of your home are at the core of my professional mission.</p>
     </div>
 
