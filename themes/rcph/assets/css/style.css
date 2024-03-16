@@ -1640,13 +1640,13 @@ body .justified-gallery-filterbar button {
   background-color: rgb(230 230 230 / var(--tw-bg-opacity));
 }
 
-.bg-neutral-700\/\[\.95\] {
-  background-color: rgb(30 30 30 / .95);
-}
-
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+  background-color: rgb(11 27 47 / var(--tw-bg-opacity));
+}
+
+.bg-primary-500\/\[\.965\] {
+  background-color: rgb(11 27 47 / .965);
 }
 
 .bg-primary-600 {
@@ -1666,6 +1666,40 @@ body .justified-gallery-filterbar button {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-900\/\[\.965\] {
+  background-color: rgb(0 0 0 / .965);
+}
+
+.bg-neutral-600\/\[\.965\] {
+  background-color: rgb(81 87 97 / .965);
+}
+
+.bg-neutral-700\/\[\.965\] {
+  background-color: rgb(30 30 30 / .965);
+}
+
+.bg-neutral-800\/\[\.965\] {
+  background-color: rgb(102 102 102 / .965);
+}
+
+.bg-neutral-950\/\[\.965\] {
+  background-color: rgb(10 10 10 / .965);
+}
+
+.bg-neutral-900\/\[\.9\] {
+  background-color: rgb(0 0 0 / .9);
 }
 
 .bg-\[url\(\'\/images\/homepage\/rhyscottam\.jpg\'\)\] {
@@ -1944,7 +1978,7 @@ body .justified-gallery-filterbar button {
 
 .text-primary-500 {
   --tw-text-opacity: 1;
-  color: rgb(40 40 40 / var(--tw-text-opacity));
+  color: rgb(11 27 47 / var(--tw-text-opacity));
 }
 
 .text-primary-600 {
@@ -2295,7 +2329,7 @@ html {
 
 :is(.dark .dark\:hover\:text-primary-500:hover) {
   --tw-text-opacity: 1;
-  color: rgb(40 40 40 / var(--tw-text-opacity));
+  color: rgb(11 27 47 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:focus\:ring-gray-700:focus) {
