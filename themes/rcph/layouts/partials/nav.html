@@ -24,7 +24,7 @@
             {{ if (eq "complexdropdown" .Pre) }}
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button @click="open = !open"
-                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-secondary-700 focus:bg-secondary-700 focus:outline-none focus:shadow-outline">
                     <span>{{ .Name }}</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -43,9 +43,9 @@
                     <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-lg text-zinc-900">
                         <div class="grid grid-cols-1 gap-4">
                             {{ range (index site.Menus .Identifier) }}
-                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
+                            <a class="flex items-start p-2 bg-transparent rounded-lg group row hover:text-white focus:text-white hover:bg-secondary-700 focus:bg-primary-700 focus:outline-none focus:shadow-outline"
                                href="{{ .URL | absLangURL }}">
-                                <div class="p-3 text-white bg-primary-600 rounded-lg group-hover:bg-gray-900">
+                                <div class="p-3 text-white bg-secondary-700 rounded-lg group-hover:bg-gray-900">
                                     {{ if (eq .Pre "stars") }}
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                          stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
@@ -87,7 +87,7 @@
             {{ else if (eq "dropdown" .Pre) }}
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button @click="open = !open"
-                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline">
+                        class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-white hover:bg-secondary-700 focus:bg-secondary-700 focus:outline-none focus:shadow-outline">
                     <span>{{ .Name }}</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                          class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -103,9 +103,9 @@
                      x-transition:leave-start="transform opacity-100 scale-100"
                      x-transition:leave-end="transform opacity-0 scale-95"
                      class="absolute right-0 z-30 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
-                    <div class="px-2 py-2 text-primary-900 bg-white rounded-md shadow">
+                    <div class="px-2 py-2 text-primary bg-white rounded-md shadow">
                         {{ range (index site.Menus .Identifier) }}
-                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-primary-600 focus:bg-primary-600 focus:outline-none focus:shadow-outline"
+                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-white focus:text-white hover:bg-secondary-700 focus:bg-secondary-700 focus:outline-none focus:shadow-outline"
                            href="{{ .URL | absLangURL }}">{{- .Name -}}</a>
                         {{ end }}
                     </div>

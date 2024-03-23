@@ -1080,6 +1080,55 @@ video {
   margin-bottom: 0;
 }
 
+/* defaults */
+
+body .justified-gallery-filterbar button {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 30 30 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(30 30 30 / var(--tw-text-opacity));
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  margin-bottom: 1.25rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+a {
+  --tw-text-opacity: 1;
+  color: rgb(248 160 36 / var(--tw-text-opacity));
+}
+
+ol li, ul li {
+  padding-left: 0.5rem;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+/* custom classes */
+
 .icon-container {
   position: relative;
   display: none;
@@ -1098,16 +1147,6 @@ video {
     align-items: center;
     justify-content: center;
   }
-}
-
-body .justified-gallery-filterbar button {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(30 30 30 / var(--tw-border-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(30 30 30 / var(--tw-text-opacity));
 }
 
 .sr-only {
@@ -1244,6 +1283,11 @@ body .justified-gallery-filterbar button {
   margin-bottom: 1rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -1298,6 +1342,10 @@ body .justified-gallery-filterbar button {
 
 .mt-\[-1px\] {
   margin-top: -1px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .block {
@@ -1630,11 +1678,6 @@ body .justified-gallery-filterbar button {
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .bg-neutral-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(230 230 230 / var(--tw-bg-opacity));
@@ -1666,40 +1709,6 @@ body .justified-gallery-filterbar button {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.bg-neutral-900\/\[\.965\] {
-  background-color: rgb(0 0 0 / .965);
-}
-
-.bg-neutral-600\/\[\.965\] {
-  background-color: rgb(81 87 97 / .965);
-}
-
-.bg-neutral-700\/\[\.965\] {
-  background-color: rgb(30 30 30 / .965);
-}
-
-.bg-neutral-800\/\[\.965\] {
-  background-color: rgb(102 102 102 / .965);
-}
-
-.bg-neutral-950\/\[\.965\] {
-  background-color: rgb(10 10 10 / .965);
-}
-
-.bg-neutral-900\/\[\.9\] {
-  background-color: rgb(0 0 0 / .9);
 }
 
 .bg-\[url\(\'\/images\/homepage\/rhyscottam\.jpg\'\)\] {
@@ -1822,6 +1831,11 @@ body .justified-gallery-filterbar button {
   padding-bottom: 24rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1934,6 +1948,10 @@ body .justified-gallery-filterbar button {
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -1976,6 +1994,11 @@ body .justified-gallery-filterbar button {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(11 27 47 / var(--tw-text-opacity));
+}
+
 .text-primary-500 {
   --tw-text-opacity: 1;
   color: rgb(11 27 47 / var(--tw-text-opacity));
@@ -1984,11 +2007,6 @@ body .justified-gallery-filterbar button {
 .text-primary-600 {
   --tw-text-opacity: 1;
   color: rgb(48 52 236 / var(--tw-text-opacity));
-}
-
-.text-primary-900 {
-  --tw-text-opacity: 1;
-  color: rgb(10 12 106 / var(--tw-text-opacity));
 }
 
 .text-secondary-700 {
@@ -2004,6 +2022,11 @@ body .justified-gallery-filterbar button {
 .text-zinc-900 {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -2167,14 +2190,14 @@ html {
   background-color: rgb(211 212 251 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-primary-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(48 52 236 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-primary-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(14 17 158 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondary-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 160 36 / var(--tw-bg-opacity));
 }
 
 .hover\:text-black:hover {
@@ -2201,14 +2224,14 @@ html {
   text-decoration-line: underline;
 }
 
-.focus\:bg-primary-600:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(48 52 236 / var(--tw-bg-opacity));
-}
-
 .focus\:bg-primary-700:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(19 23 209 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-secondary-700:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 160 36 / var(--tw-bg-opacity));
 }
 
 .focus\:text-white:focus {

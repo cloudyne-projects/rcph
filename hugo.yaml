@@ -124,11 +124,6 @@ menu:
       name: Home
       url: /
       weight: 10
-    - identifier: welcome
-      pre: elementlink
-      name: Welcome
-      url: '/#welcome'
-      weight: 20
     - identifier: gallery
       name: Gallery
       url: '/gallery'
@@ -142,6 +137,10 @@ menu:
       name: Consultation
       url: '/#consultation'
       weight: 50
+    - identifier: services
+      pre: dropdown
+      name: Products & Services
+      weight: 30
     # - identifier: recent
     #   pre: dropdown
     #   name: Recent
@@ -178,6 +177,12 @@ menu:
       post: "Take a look at your statistics"
       url: "#"
       weight: 30
+  services:
+    - identifier: new-boiler-installation
+      name: New Boiler Installation
+      post: "Easy customization"
+      url: "new-boiler-installation"
+      weight: 10
   # footer:
   #   - identifier: about
   #     name: About
