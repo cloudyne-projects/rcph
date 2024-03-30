@@ -23,8 +23,11 @@
     a {
         @apply text-secondary-700;
     }
+    ol, ul {
+        @apply mb-7;
+    }
     ol li, ul li {
-        @apply pl-2;
+        @apply pl-2 mb-3;
     }
     ol li {
         @apply list-decimal;

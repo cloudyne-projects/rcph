@@ -183,6 +183,11 @@ menu:
       post: "Easy customization"
       url: "new-boiler-installation"
       weight: 10
+    - identifier: heating-engineer-in-kent
+      name: Heating Engineer (Kent)
+      post: "Easy customization"
+      url: "heating-engineer-in-kent"
+      weight: 20
   # footer:
   #   - identifier: about
   #     name: About
